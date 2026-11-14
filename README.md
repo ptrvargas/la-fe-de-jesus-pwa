@@ -36,7 +36,7 @@ Abre `http://localhost:8080`. HTTPS es obligatorio en producción para Service W
 
 ## Publicación
 
-El destino solicitado es el repositorio nuevo `la-fe-de-jesus-pwa`, en GitHub Pages. Véase `docs/GITHUB_PAGES.md`. Repositorio creado: https://github.com/ptrvargas/la-fe-de-jesus-pwa. Publicación inicial mediante GitHub Actions; el resultado del despliegue debe verificarse en Pages.
+El destino solicitado es el repositorio nuevo `la-fe-de-jesus-pwa`, en GitHub Pages. Véase `docs/GITHUB_PAGES.md`. Repositorio creado: https://github.com/ptrvargas/la-fe-de-jesus-pwa. Sitio publicado y abierto en navegador: https://ptrvargas.github.io/la-fe-de-jesus-pwa/. GitHub Actions finalizó correctamente.
 
 ## Privacidad y Biblia
 
@@ -46,4 +46,4 @@ Bible Gateway necesita conexión. Se usa su herramienta oficial sin distribuir s
 
 ## Estado de verificación
 
-Pasaron las pruebas automatizadas descritas en `docs/TEST_RESULTS.md`. Estas pruebas **no equivalen** a instalación real, rotación física, comprobación visual o funcionamiento real del proveedor externo. La versión no debe presentarse como validada en teléfonos hasta completar la matriz manual.
+Pasaron las pruebas automatizadas descritas en `docs/TEST_RESULTS.md`. También se comprobó en la URL publicada la carga visual de escritorio, navegación, cambio de idioma, persistencia al recargar y exportación/importación real de JSON. Estas comprobaciones **no equivalen** a instalación real, rotación física ni funcionamiento real del proveedor bíblico. La versión no debe presentarse como validada en teléfonos hasta completar la matriz manual.

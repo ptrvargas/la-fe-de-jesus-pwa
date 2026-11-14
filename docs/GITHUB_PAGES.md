@@ -2,7 +2,9 @@
 
 ## Estado de esta entrega
 
-Repositorio nuevo creado y acceso de escritura confirmado: https://github.com/ptrvargas/la-fe-de-jesus-pwa. Se conserva el commit inicial generado por GitHub; los archivos de v0.1 se incorporan como un commit posterior. La configuración de Pages y el despliegue se verifican por separado.
+Repositorio nuevo creado y acceso de escritura confirmado: https://github.com/ptrvargas/la-fe-de-jesus-pwa. Se conserva el commit inicial generado por GitHub; los archivos de v0.1 se incorporan como un commit posterior. Pages configurado con GitHub Actions y HTTPS. Despliegue exitoso comprobado en la ejecución 43623011056, intento 2: https://github.com/ptrvargas/la-fe-de-jesus-pwa/actions/runs/43623011056.
+
+URL publicada y abierta: https://ptrvargas.github.io/la-fe-de-jesus-pwa/.
 
 ## Continuación preparada
 

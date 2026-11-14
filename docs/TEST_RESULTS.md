@@ -18,7 +18,17 @@
 
 Se revisaron visualmente las dos páginas del PDF original para cotejar contenido. Eso no constituye una revisión visual de la aplicación.
 
-## Límite de la vista previa
+## Comprobaciones reales en GitHub Pages
+
+Sitio abierto: https://ptrvargas.github.io/la-fe-de-jesus-pwa/. GitHub Actions ejecutó y aprobó las nueve pruebas y completó el despliegue (ejecución 43623011056, intento 2).
+
+En el navegador de escritorio se verificaron: carga y presentación de esta versión; escritura de q1 y q6; recorrido de las cuatro secciones en inglés; avance sin aceptar la decisión; lectura adicional marcada de forma independiente; regreso a preguntas y recarga conservando las dos respuestas, idioma y estado adicional; descarga real del JSON; importación del mismo archivo; cambio a Instructor; revisión de la copia importada con campos deshabilitados y respuestas intactas; regreso al estudio individual y a español.
+
+El recuadro de Bible Gateway se abrió con referencia canónica y enlace RVR1960, pero al tocar la referencia no se observó texto del pasaje. Por tanto, el popover oficial no se declara funcional. Se mantiene el enlace alternativo, pendiente de comprobar fuera de este navegador. No se verificó la causa ni se probó NIV en el proveedor.
+
+La revisión visual de escritorio mostró la página sin recortes evidentes en el ancho observado; no sustituye la matriz de tamaños ni las rotaciones.
+
+## Límite de la vista previa inicial
 
 El servidor de vista previa se inició, pero el navegador remoto devolvió otra versión de la aplicación desde una caché previa del mismo origen. Se descartaron esas observaciones como evidencia de la versión actual. No se alteraron los registros de esa versión ni se atribuyeron sus resultados a esta entrega.
 
@@ -35,8 +45,9 @@ El servidor de vista previa se inició, pero el navegador remoto devolvió otra 
 | Caché y recarga real sin red, ambos idiomas | Pendiente |
 | Activación de una actualización sin perder respuestas | Pendiente real |
 | Popover oficial al tocar, RVR1960 y NIV, referencias adicionales | Pendiente proveedor real |
-| Descarga/importación de un archivo real y compartir por WhatsApp/correo | Pendiente dispositivo |
-| GitHub Actions y URL GitHub Pages | Bloqueado por acceso/configuración |
+| Descarga e importación de JSON real | Aprobadas en navegador de escritorio |
+| Compartir por WhatsApp/correo | Pendiente dispositivo |
+| GitHub Actions y URL GitHub Pages | Aprobadas; despliegue exitoso |
 | Revisión doctrinal/editorial inglesa | Pendiente humana |
 
 ## Procedimiento manual breve
