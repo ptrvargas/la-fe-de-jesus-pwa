@@ -1,4 +1,4 @@
-# La Fe de Jesús / The Faith of Jesus — v0.1.1
+# La Fe de Jesús / The Faith of Jesus — v0.1.2
 
 PWA estática, bilingüe, gratuita y sin cuentas. Lección piloto: **Dios**, basada en `01-Dios.pdf`, proporcionado por el usuario. Traducción inglesa provisional; requiere revisión doctrinal y editorial.
 
@@ -51,3 +51,7 @@ Pasaron las pruebas automatizadas descritas en `docs/TEST_RESULTS.md`. También 
 ## Corrección V0.1.1
 
 Pasajes reales verificados dentro de la lección con RVR1960 y NIV, incluyendo un rango de dos versículos y una referencia del estudio adicional. Se corrigió la propagación del click y la entrega del iframe actualizado. 12 pruebas aprobadas; respuestas locales conservadas. Prueba de regresión física Android/PWA pendiente. Diagnóstico, fuentes y resultados: [docs/V0.1.1_BIBLE_GATEWAY.md](docs/V0.1.1_BIBLE_GATEWAY.md).
+
+## Traducción inglesa V0.1.2
+
+Texto consolidado aprobado, sin marcas de revisión, con aclaración pastoral diferenciada. Se conserva la decisión original, los identificadores, las respuestas y la lección española. Registro de cambios y pruebas: [docs/V0.1.2_ENGLISH.md](docs/V0.1.2_ENGLISH.md). Atribuciones pendientes: [docs/LESSON_01_EN_EDITORIAL.md](docs/LESSON_01_EN_EDITORIAL.md).

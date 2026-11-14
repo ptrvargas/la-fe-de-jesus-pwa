@@ -1,7 +1,7 @@
 {
   "id": 1,
   "title": "God",
-  "translationReviewRequired": true,
+  "translationReviewRequired": false,
   "questions": [
     {
       "id": "q1",
@@ -23,19 +23,19 @@
     },
     {
       "id": "q4",
-      "text": "How does God regard human beings?",
+      "text": "How does God regard us?",
       "ref": "1 John 3:1-2",
       "canonical": "1 John 3:1-2"
     },
     {
       "id": "q5",
       "text": "Does God care about our problems?",
-      "ref": "Psalms 40:1-3",
+      "ref": "Psalm 40:1-3",
       "canonical": "Psalms 40:1-3"
     },
     {
       "id": "q6",
-      "text": "What is God’s character like?",
+      "text": "What is God's character like?",
       "ref": "1 John 4:8",
       "canonical": "1 John 4:8"
     }
@@ -43,7 +43,7 @@
   "applications": [
     {
       "id": "a1",
-      "text": "Respect God’s name",
+      "text": "Respect God's name",
       "ref": "Exodus 20:7",
       "canonical": "Exodus 20:7"
     },
@@ -55,7 +55,7 @@
     },
     {
       "id": "a3",
-      "text": "Put God first",
+      "text": "Put God first in my life",
       "ref": "Matthew 6:33",
       "canonical": "Matthew 6:33"
     },
@@ -71,38 +71,53 @@
     {
       "title": "Introduction",
       "paragraphs": [
-        "We believe in one God. (1 Corinthians 8:6) Revealed in three persons. (Matthew 28:19) Creator of the universe. (Genesis 1:1; Isaiah 45:18; Hebrews 1:10)",
-        "What is God like? He is immortal. (1 Timothy 6:16) He is spirit. (John 4:24) He is eternal. (Isaiah 57:15) He is unchanging. (James 1:17) He is perfect. (Matthew 5:48) He is wise. (1 Corinthians 1:24) He is holy. (Exodus 15:11) He is truth. (Jeremiah 10:10) He is merciful. (Psalms 86:15)",
-        "Ways God reveals Himself: Through nature. (Psalms 19:1) Through the Bible. (Revelation 1:1) Through the Lord Jesus. (John 14:6)",
-        "God is our Father: He cares about our problems. (Psalms 46:1) He bears with us in mercy. (Jeremiah 31:3) He comforts us in sorrow. (2 Corinthians 1:3) He provides what we lack. (Philippians 4:19)",
-        "Our attitude toward God: We should trust Him. (Psalms 52:8) Keep His commandments. (Ecclesiastes 12:13) If we obey Him, things will work for our good. (Romans 8:28) God is always willing to receive us. (James 4:8)"
+        "We believe in one God. (1 Corinthians 8:6) He is revealed in three persons. (Matthew 28:19) He is the Creator of the universe. (Genesis 1:1; Isaiah 45:18; Hebrews 1:10)",
+        "What is God like? He is immortal. (1 Timothy 6:16) He is spirit. (John 4:24) He is eternal. (Isaiah 57:15) He is unchanging. (James 1:17) He is perfect. (Matthew 5:48) He is wise. (1 Corinthians 1:24) He is holy. (Exodus 15:11) He is the true God. (Jeremiah 10:10) He is merciful. (Psalm 86:15)",
+        "How does God reveal Himself? Through nature. (Psalm 19:1) Through the Bible. (Revelation 1:1) Through the Lord Jesus. (John 14:6)",
+        "God is our Father. He cares about our problems. (Psalm 46:1) He treats us with enduring love and mercy. (Jeremiah 31:3) He comforts us in our sorrow. (2 Corinthians 1:3) He provides what we lack. (Philippians 4:19)",
+        "What should our attitude toward God be? We should trust Him (Psalm 52:8) and keep His commandments. (Ecclesiastes 12:13) As we walk in obedience, we can trust that He works for the good of those who love Him. (Romans 8:28) God is always willing to receive us. (James 4:8)"
       ]
     },
     {
       "title": "Our need for God",
       "paragraphs": [
-        "The reason for the misfortunes and sufferings that people endure is their departure from God. The prophet Jeremiah speaks of how terrible this mistake is: “For my people have committed two evils: they have forsaken me, the fountain of living water, to dig for themselves broken cisterns that hold no water.” (Jeremiah 2:13)",
-        "The only solution is to return to God. Dr. Andrew Conway Ivy, a renowned professor at the University of Illinois, said: “Believing in God provides the only, the most complete, essential, and rational meaning to existence.” Philosopher Will Durant adds: “The great problem of our time is not communism against individualism; nor Europe against America; nor even East against West. It is whether humanity can bear to live without God.” The wonderful thing is that as soon as we take a step toward God, we will find Him waiting for us with love and mercy."
-      ]
+        "Humanity’s misfortunes and suffering arise from its separation from God. The prophet Jeremiah speaks of the tragedy of this mistake: “My people have committed two evils: they have forsaken Me, the spring of living water, and have dug for themselves broken cisterns that cannot hold water.” (Jeremiah 2:13)",
+        "The only solution is to return to God. The original lesson attributes to Dr. Andrew Conway Ivy, whom it identifies as a well-known professor at the University of Illinois, the view that belief in God provides the only, most complete, essential, and rational meaning to existence. It also attributes to the philosopher Will Durant the view that the great problem of our time is not communism versus individualism, Europe versus America, or even East versus West, but whether human beings can bear to live without God. The wonderful thing is that as soon as we take a step toward God, we will find Him waiting for us with love and mercy."
+      ],
+      "pastoralClarification": {
+        "title": "Pastoral clarification",
+        "text": "This statement concerns humanity’s separation from God. It should not be used to assume that a particular person’s illness, loss, or suffering results from that person’s disobedience."
+      }
     },
     {
       "title": "The existence of God",
       "paragraphs": [
-        "Some say: I do not believe in God because I cannot see Him. Yet we believe in many things we cannot see, such as electricity, wind, and love. Others say: I do not believe because I do not understand God. An unbelieving scholar walked along a beach, thinking about how to understand God. Suddenly he saw a child using a seashell to take water from the sea and empty it into a hole in the sand.",
-        "“What are you doing, little one?”",
-        "“I want to empty the sea into this hole,” the child said.",
+        "Some people say, “I do not believe in God because I cannot see Him.” Yet there are many things we believe in without seeing them, such as electricity, the wind, and love. Others say, “I do not believe because I do not understand God.” An unbelieving scholar was walking along a beach, thinking about how he might understand God. Suddenly, he saw a child using a seashell to take water from the sea and pour it into a hole in the sand.",
+        "“What are you doing, little one?” the scholar asked.",
+        "“I want to empty the sea into this hole,” the child replied.",
         "“Ah!” the scholar said to himself. “That is what I am trying to do: faced with the ocean of the infinite, I want to pour it all into my finite mind.”",
-        "Who does not believe in God? “The fool has said in his heart: There is no God.” (Psalms 14:1) What do scientists say about God? Sir Isaac Newton, the famous discoverer of the law of universal gravitation, said: “The admirable order of the sun, planets, and comets could only have come from the plan and direction of an omniscient and omnipotent being. It follows that God is indeed a divine, wise, and almighty God, a being above everything and infinitely higher than the human mind. We arrive at the suggestion that God must be thought of as the sum of all the powers of the universe.” As Sir Francis Bacon said: “A little science inclines the human spirit toward atheism, but philosophical depths lead human spirits toward religion.”"
+        "Who does not believe in God? “The fool has said in his heart, ‘There is no God.’” (Psalm 14:1) What have scientists said about God? The original lesson attributes to Sir Isaac Newton, known for his discovery of the law of universal gravitation, the view that the remarkable order of the sun, planets, and comets could only have come from the plan and direction of an all-knowing and all-powerful being. It continues by describing God as divine, wise, and almighty, above all things and infinitely higher than the human mind. The lesson also invokes Sir Francis Bacon’s observation that a little philosophy inclines the human mind toward atheism, whereas deeper philosophical inquiry leads the mind toward religion."
       ]
     },
     {
       "title": "Trust in God",
       "paragraphs": [
-        "Dr. Werner Von Braun, father of interplanetary rockets, said: “Our need for God is based solely on admiration and awe. People need faith just as they need food, water, and air.”",
-        "The Bible contains wonderful promises for those who trust God. “All things work together for good for those who love God.” (Romans 8:28) “If God is for us, who can be against us?” (Romans 8:31) God comforts us in all our troubles. (2 Corinthians 1:6,7) God can supply all our needs. (Philippians 4:19) He is our ready help in trouble. (Psalms 46:1) All things are possible with God. (Matthew 19:26) We can trust in God’s mercy forever. (Psalms 52:8)",
-        "What should we do so that God will be with us and protect us? Long for God with all our heart. (Psalms 42:1) Obey God and keep His commandments. (Ecclesiastes 12:13) We cannot serve both God and the world. (Matthew 6:24) Put God above everything. (Matthew 6:33) Love Him with all our heart. (Matthew 22:37) Felix of Nola, a devoted Christian, was fleeing his enemies through the mountains. He came to a cave and took refuge there. A spider spun a web across the entrance. Seeing the web, his pursuers passed by. Felix then said: “Where God is, a spider’s web is a wall; where He is absent, a wall is only a spider’s web.”",
-        "Lincoln was very worried. A minister told him: Do not worry, sir, God is on our side. The president replied: I am less concerned about knowing whether He is on our side than about knowing for certain that we are on God’s side."
+        "The Spanish lesson attributes to Dr. Wernher von Braun, whom it describes as a pioneer of interplanetary rockets, the view that our need for God rests solely on admiration and awe, and that human beings need faith just as they need food, water, and air.",
+        "The Bible contains wonderful promises for those who trust in God. All things work together for the good of those who love God. (Romans 8:28) “If God is for us, who can be against us?” (Romans 8:31) God comforts us in all our troubles. (2 Corinthians 1:6-7) God can supply all our needs. (Philippians 4:19) He is our ready help in times of trouble. (Psalm 46:1) With God all things are possible. (Matthew 19:26) We can trust in God’s mercy forever. (Psalm 52:8)",
+        "What should we do so that God will be with us and protect us? Long for God with all our heart. (Psalm 42:1) Obey God and keep His commandments. (Ecclesiastes 12:13) We cannot serve both God and the world. (Matthew 6:24) Put God above everything else. (Matthew 6:33) Love Him with all our heart. (Matthew 22:37) According to the traditional story recounted in the original lesson, Felix of Nola, a devoted Christian, was fleeing through the mountains, pursued by his enemies. He came to a cave and took refuge there. A spider spun a web across the entrance. When his pursuers saw the web, they continued on their way. The lesson attributes to Felix the reflection that where God is present, a spider’s web is a wall, and where He is absent, even a wall is no more than a spider’s web.",
+        "The original lesson also recounts that Lincoln was very worried. A minister reassured him that he should not worry because God was on their side. Lincoln reportedly replied that he was less concerned about whether God was on their side than about knowing for certain whether they were on God’s side."
       ]
+    }
+  ],
+  "showHistoricalNote": false,
+  "questionGroups": [
+    {
+      "title": "God",
+      "firstQuestionId": "q1"
+    },
+    {
+      "title": "God and Humanity",
+      "firstQuestionId": "q4"
     }
   ]
 }
