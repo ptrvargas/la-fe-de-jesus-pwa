@@ -1,4 +1,29 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{font:16px/1.6 system-ui,sans-serif;padding:10px;color:#203d3a}a{color:#215e4b}[id^="bg_popup-"],.bg_popup-outer,.bg_popup{max-width:calc(100vw - 24px)!important;max-height:270px!important;overflow:auto!important}button{padding:10px;font:inherit}#hint{font-size:13px}</style></head><body><p id="hint"></p><a id="passage" class="bibleref" target="_blank" rel="noopener noreferrer"></a><script>
-const params=new URLSearchParams(location.search),lang=params.get('lang')==='en'?'en':'es',ref=params.get('ref')||'Ephesians 4:6';document.documentElement.lang=lang;const version=lang==='es'?'RVR1960':'NIV';const a=document.getElementById('passage');a.textContent=ref;a.dataset.bibleref=ref;a.href='https://www.biblegateway.com/passage/?search='+encodeURIComponent(ref)+'&version='+version;document.getElementById('hint').textContent=lang==='es'?'Toca para consultar el pasaje. Si no se abre aquí, usa el enlace directo de la lección.':'Tap to read the passage. If it does not open here, use the lesson’s direct link.';
-const script=document.createElement('script');script.src='https://www.biblegateway.com/public/link-to-us/tooltips/bglinks.js';script.onload=()=>{BGLinks.version=version;BGLinks.clickTooltip=true;BGLinks.showTooltips=true;BGLinks.linkVerses();};script.onerror=()=>{document.getElementById('hint').textContent=lang==='es'?'No se pudo cargar Bible Gateway. Necesitas conexión.':'Bible Gateway could not load. A connection is required.';};document.body.appendChild(script);
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{font:16px/1.6 system-ui,sans-serif;padding:10px;color:#203d3a}a{color:#215e4b}.bg_popup-outer{position:relative!important;left:0!important;top:0!important;width:100%!important;max-width:100%!important;max-height:270px!important;overflow:auto!important;box-sizing:border-box;margin:12px 0}button{padding:10px;font:inherit}#hint{font-size:13px}</style></head><body><p id="hint" role="status" aria-live="polite"></p><a id="passage" class="bibleref" target="_blank" rel="noopener noreferrer"></a><script>
+const params=new URLSearchParams(location.search),lang=params.get('lang')==='en'?'en':'es';
+// Only canonical references are passed to the provider's HTML-producing tool.
+const candidate=params.get('ref')||'Ephesians 4:6';
+const ref=/^(?:[1-3] )?[A-Za-z]+(?: [A-Za-z]+)* \d{1,3}:\d{1,3}(?:[-,]\d{1,3})*$/.test(candidate)?candidate:'Ephesians 4:6';
+document.documentElement.lang=lang;
+const version=lang==='es'?'RVR1960':'NIV',a=document.getElementById('passage'),hint=document.getElementById('hint');
+a.textContent=ref;a.dataset.bibleref=ref;a.href='https://www.biblegateway.com/passage/?search='+encodeURIComponent(ref)+'&version='+version;
+const unavailable=()=>{hint.textContent=lang==='es'?'No se pudo mostrar el pasaje aquí. Comprueba la conexión o utiliza el enlace directo de la lección.':'The passage could not be displayed here. Check your connection or use the lesson’s direct link.';};
+hint.textContent=lang==='es'?'Cargando pasaje de Bible Gateway…':'Loading passage from Bible Gateway…';
+let timeout=setTimeout(unavailable,15000);
+const script=document.createElement('script');script.src='https://www.biblegateway.com/public/link-to-us/tooltips/bglinks.js';
+script.onload=()=>{
+ try{
+  BGLinks.version=version;BGLinks.clickTooltip=true;BGLinks.showTooltips=true;BGLinks.linkVerses();
+  // Keep the official target listener, but stop this click reaching the
+  // provider's document-level close listener or following the anchor URL.
+  a.addEventListener('click',event=>{event.preventDefault();event.stopPropagation();});
+  const container=document.getElementById('bg_popup-container');
+  const observer=new MutationObserver(()=>{
+   if(container.querySelector('.bg_popup-content-bible')){clearTimeout(timeout);hint.textContent='Bible Gateway · '+version;}
+  });
+  observer.observe(container,{childList:true,subtree:true});
+  // The user's tap on the lesson reference already requested the passage.
+  a.click();
+ }catch{clearTimeout(timeout);unavailable();}
+};
+script.onerror=()=>{clearTimeout(timeout);unavailable();};document.body.appendChild(script);
 </script></body></html>

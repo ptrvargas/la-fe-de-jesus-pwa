@@ -1,4 +1,4 @@
-const CACHE='fe-de-jesus-v0.1.0-1';
+const CACHE='fe-de-jesus-v0.1.1-1';
 const FILES=['./','./index.html','./src/app.js','./src/core.js','./src/db.js','./src/i18n.js','./src/style.css','./content/catalog.json','./content/lesson-01.es.json','./content/lesson-01.en.json','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png','./icons/maskable-512.png','./bible.html'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES))));
 self.addEventListener('message',event=>{if(event.data==='activate')self.skipWaiting();});
