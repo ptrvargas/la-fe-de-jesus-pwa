@@ -1,0 +1,1 @@
+import {cpSync,mkdirSync,writeFileSync} from 'node:fs';mkdirSync('dist',{recursive:true});for(const f of ['index.html','bible.html','sw.js','manifest.webmanifest','src','content','icons'])cpSync(f,'dist/'+f,{recursive:true});writeFileSync('dist/.nojekyll','');

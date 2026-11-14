@@ -1,2 +1,49 @@
-# la-fe-de-jesus-pwa
-PWA bilingüe de estudios bíblicos. Sin cuentas, con guardado local y estudio individual o acompañado.
+# La Fe de Jesús / The Faith of Jesus — v0.1
+
+PWA estática, bilingüe, gratuita y sin cuentas. Lección piloto: **Dios**, basada en `01-Dios.pdf`, proporcionado por el usuario. Traducción inglesa provisional; requiere revisión doctrinal y editorial.
+
+## Uso
+
+1. Abre la aplicación y elige idioma y modalidad.
+2. Responde las seis preguntas. El guardado local es automático.
+3. Revisa las cuatro aplicaciones y la decisión voluntaria. Puedes continuar sin aceptarla.
+4. Lee el estudio adicional. Los indicadores de estudio, decisión y lectura son independientes.
+5. Exporta un JSON periódicamente. El navegador puede borrar almacenamiento local; no existe recuperación en servidores.
+
+En modalidad Instructor, escribe tu nombre, genera una invitación JSON y compártela manualmente. El estudiante la importa y, si desea, devuelve un JSON de respuestas. Importar añade copias sin sustituir registros existentes. Revisa cada copia desde Instructor. “Continuar con esta copia” la convierte en tu registro editable y conserva el registro anterior en la lista. Esta opción sirve también para recuperar una copia propia. Las notas del instructor son locales.
+
+El botón Exportar guarda una copia de **todos los registros locales**, incluidos estudiantes importados y notas. Compartir incluye únicamente el registro abierto, con sus respuestas, decisiones y metadatos. Se pide confirmación antes de compartir. Web Share se utiliza cuando admite archivos; en otros casos se descarga el JSON para adjuntarlo manualmente.
+
+## Desarrollo
+
+Requiere Node.js 22 o superior (dependencias solo para pruebas):
+
+```sh
+npm ci
+npm test
+npm run build
+python3 -m http.server 8080 --directory dist
+```
+
+Abre `http://localhost:8080`. HTTPS es obligatorio en producción para Service Worker e instalación PWA. En desarrollo se admite localhost.
+
+- `src/`: interfaz, idiomas, validación y acceso a IndexedDB.
+- `content/`: lecciones y catálogo de 20 espacios; solamente la lección 1 está disponible.
+- `manifest.webmanifest`, `sw.js`, `icons/`: instalación y caché.
+- `bible.html`: integración aislada de Bible Gateway, cargada a petición.
+- `tests/`: validación y pruebas de integración DOM.
+- `docs/`: arquitectura, resultados de pruebas e instrucciones de publicación.
+
+## Publicación
+
+El destino solicitado es el repositorio nuevo `la-fe-de-jesus-pwa`, en GitHub Pages. Véase `docs/GITHUB_PAGES.md`. Repositorio creado: https://github.com/ptrvargas/la-fe-de-jesus-pwa. Publicación inicial mediante GitHub Actions; el resultado del despliegue debe verificarse en Pages.
+
+## Privacidad y Biblia
+
+No hay backend, cuentas, contraseñas, analítica ni base de datos remota. Los registros se almacenan exclusivamente en IndexedDB. El contenido estático se almacena en Cache Storage. No se envían respuestas a Bible Gateway: su herramienta se carga en un iframe aislado que recibe solo la referencia y el idioma.
+
+Bible Gateway necesita conexión. Se usa su herramienta oficial sin distribuir su código ni almacenar sus pasajes en la caché. La interfaz ofrece RVR1960 en español y NIV en inglés mediante el proveedor, con enlace directo alternativo. Las citas bíblicas breves dentro del estudio adicional proceden del PDF suministrado y su traducción; no se ha incorporado una Biblia completa. La configuración de traducciones está implementada, pero la visualización efectiva del proveedor está pendiente de prueba.
+
+## Estado de verificación
+
+Pasaron las pruebas automatizadas descritas en `docs/TEST_RESULTS.md`. Estas pruebas **no equivalen** a instalación real, rotación física, comprobación visual o funcionamiento real del proveedor externo. La versión no debe presentarse como validada en teléfonos hasta completar la matriz manual.

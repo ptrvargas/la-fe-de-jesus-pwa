@@ -1,0 +1,6 @@
+const CACHE='fe-de-jesus-v0.1.0-1';
+const FILES=['./','./index.html','./src/app.js','./src/core.js','./src/db.js','./src/i18n.js','./src/style.css','./content/catalog.json','./content/lesson-01.es.json','./content/lesson-01.en.json','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png','./icons/maskable-512.png','./bible.html'];
+self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES))));
+self.addEventListener('message',event=>{if(event.data==='activate')self.skipWaiting();});
+self.addEventListener('activate',event=>event.waitUntil((async()=>{for(const key of await caches.keys())if(key.startsWith('fe-de-jesus-')&&key!==CACHE)await caches.delete(key);await self.clients.claim();})()));
+self.addEventListener('fetch',event=>{const u=new URL(event.request.url);if(event.request.method!=='GET'||u.origin!==self.location.origin)return;const base=new URL(self.registration.scope);if(!u.pathname.startsWith(base.pathname))return;event.respondWith((async()=>{const cache=await caches.open(CACHE);const cached=await cache.match(event.request,{ignoreSearch:true});if(cached)return cached;try{return await fetch(event.request);}catch{if(event.request.mode==='navigate')return await cache.match('./index.html');throw Error('offline');}})());});

@@ -1,0 +1,4 @@
+let db;
+export async function openDB(){return db??=await new Promise((resolve,reject)=>{const r=indexedDB.open('la-fe-de-jesus',1);r.onupgradeneeded=()=>r.result.createObjectStore('state');r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);r.onblocked=()=>reject(Error('blocked'));});}
+export async function readState(){const d=await openDB();return new Promise((resolve,reject)=>{const t=d.transaction('state');const r=t.objectStore('state').get('workspace');r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);});}
+export async function writeState(value){const d=await openDB();return new Promise((resolve,reject)=>{const t=d.transaction('state','readwrite');t.objectStore('state').put(value,'workspace');t.oncomplete=resolve;t.onerror=()=>reject(t.error);t.onabort=()=>reject(t.error);});}
