@@ -1,3 +1,11 @@
+# Actualización V0.1.1 — 14 de noviembre de 2026
+
+12 pruebas automatizadas aprobadas y despliegue GitHub Pages exitoso. Verificado en Chrome de escritorio: texto real visible dentro de la lección en RVR1960 y NIV; pasaje de dos versículos; referencia desde Estudio adicional; actualización de una sesión existente conservando respuestas; cierre y reapertura sin navegar fuera de la lección. Detalles y límites: [V0.1.1_BIBLE_GATEWAY.md](V0.1.1_BIBLE_GATEWAY.md).
+
+Pendiente: repetir la regresión en Chrome Android/PWA e iOS físicos. Los resultados V0.1 que siguen son históricos; el estado del popover indicado allí fue superado por las pruebas V0.1.1 anteriores.
+
+---
+
 # Resultados — v0.1 — 14 de noviembre de 2026
 
 ## Ejecutadas

@@ -1,4 +1,4 @@
-# La Fe de Jesús / The Faith of Jesus — v0.1
+# La Fe de Jesús / The Faith of Jesus — v0.1.1
 
 PWA estática, bilingüe, gratuita y sin cuentas. Lección piloto: **Dios**, basada en `01-Dios.pdf`, proporcionado por el usuario. Traducción inglesa provisional; requiere revisión doctrinal y editorial.
 
@@ -42,8 +42,12 @@ El destino solicitado es el repositorio nuevo `la-fe-de-jesus-pwa`, en GitHub Pa
 
 No hay backend, cuentas, contraseñas, analítica ni base de datos remota. Los registros se almacenan exclusivamente en IndexedDB. El contenido estático se almacena en Cache Storage. No se envían respuestas a Bible Gateway: su herramienta se carga en un iframe aislado que recibe solo la referencia y el idioma.
 
-Bible Gateway necesita conexión. Se usa su herramienta oficial sin distribuir su código ni almacenar sus pasajes en la caché. La interfaz ofrece RVR1960 en español y NIV en inglés mediante el proveedor, con enlace directo alternativo. Las citas bíblicas breves dentro del estudio adicional proceden del PDF suministrado y su traducción; no se ha incorporado una Biblia completa. La configuración de traducciones está implementada, pero la visualización efectiva del proveedor está pendiente de prueba.
+Bible Gateway necesita conexión. Se usa su herramienta oficial sin distribuir su código ni almacenar sus pasajes en la caché. La interfaz ofrece RVR1960 en español y NIV en inglés mediante el proveedor, con enlace directo alternativo. Las citas bíblicas breves dentro del estudio adicional proceden del PDF suministrado y su traducción; no se ha incorporado una Biblia completa. La visualización real del proveedor está verificada en escritorio en V0.1.1 con RVR1960 y NIV; queda pendiente la regresión física Android/PWA.
 
 ## Estado de verificación
 
-Pasaron las pruebas automatizadas descritas en `docs/TEST_RESULTS.md`. También se comprobó en la URL publicada la carga visual de escritorio, navegación, cambio de idioma, persistencia al recargar y exportación/importación real de JSON. Estas comprobaciones **no equivalen** a instalación real, rotación física ni funcionamiento real del proveedor bíblico. La versión no debe presentarse como validada en teléfonos hasta completar la matriz manual.
+Pasaron las pruebas automatizadas descritas en `docs/TEST_RESULTS.md`. También se comprobó en la URL publicada la carga visual de escritorio, navegación, cambio de idioma, persistencia al recargar y exportación/importación real de JSON. V0.1.1 añadió pruebas reales del proveedor bíblico en escritorio. Estas comprobaciones **no equivalen** a instalación real ni rotación física. La versión no debe presentarse como validada en teléfonos hasta completar la matriz manual.
+
+## Corrección V0.1.1
+
+Pasajes reales verificados dentro de la lección con RVR1960 y NIV, incluyendo un rango de dos versículos y una referencia del estudio adicional. Se corrigió la propagación del click y la entrega del iframe actualizado. 12 pruebas aprobadas; respuestas locales conservadas. Prueba de regresión física Android/PWA pendiente. Diagnóstico, fuentes y resultados: [docs/V0.1.1_BIBLE_GATEWAY.md](docs/V0.1.1_BIBLE_GATEWAY.md).
