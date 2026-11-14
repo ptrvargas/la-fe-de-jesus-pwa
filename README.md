@@ -1,6 +1,6 @@
 # La Fe de Jesús / The Faith of Jesus — v0.1.2
 
-PWA estática, bilingüe, gratuita y sin cuentas. Lección piloto: **Dios**, basada en `01-Dios.pdf`, proporcionado por el usuario. Traducción inglesa provisional; requiere revisión doctrinal y editorial.
+PWA estática, bilingüe, gratuita y sin cuentas. Lección piloto: **Dios**, basada en `01-Dios.pdf`, proporcionado por el usuario. Traducción inglesa consolidada aprobada e implementada en V0.1.2. Las atribuciones históricas pendientes están documentadas en las notas editoriales.
 
 ## Uso
 
