@@ -1,0 +1,874 @@
+{
+  "date": "2026-11-22",
+  "worker": "https://noisy-butterfly-b9cela-fe-de-jesus-bible-pruebas.ptrvargas-sda.workers.dev",
+  "referencesPerLanguage": 48,
+  "requests": 96,
+  "passed": 96,
+  "results": [
+    {
+      "lang": "es",
+      "passage": "1CO.1.24",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "1CO.8.6",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "1JN.3.1",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "1JN.3.1-2",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "1JN.3.2",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "1JN.4.8",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "1TI.6.16",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "2CO.1.3",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "2CO.1.6",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "2CO.1.6-7",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "2CO.1.7",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "ACT.5.29",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "ECC.12.13",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "EPH.4.6",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "EXO.15.11",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "EXO.20.7",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "GEN.1.1",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "HEB.1.10",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "ISA.45.18",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "ISA.57.15",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "JAS.1.17",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "JAS.4.8",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "JER.10.10",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "JER.2.13",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "JER.31.3",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "JHN.14.6",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "JHN.3.16",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "JHN.4.24",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "MAT.19.26",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "MAT.22.37",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "MAT.28.19",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "MAT.5.48",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "MAT.6.24",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "MAT.6.33",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "PHP.4.19",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "PSA.14.1",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "PSA.19.1",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "PSA.40.1",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "PSA.40.1-3",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "PSA.40.2",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "PSA.40.3",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "PSA.42.1",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "PSA.46.1",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "PSA.52.8",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "PSA.86.15",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "REV.1.1",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "ROM.8.28",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "es",
+      "passage": "ROM.8.31",
+      "http": "200",
+      "versionId": 128,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "1CO.1.24",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "1CO.8.6",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "1JN.3.1",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "1JN.3.1-2",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "1JN.3.2",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "1JN.4.8",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "1TI.6.16",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "2CO.1.3",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "2CO.1.6",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "2CO.1.6-7",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "2CO.1.7",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "ACT.5.29",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "ECC.12.13",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "EPH.4.6",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "EXO.15.11",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "EXO.20.7",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "GEN.1.1",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "HEB.1.10",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "ISA.45.18",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "ISA.57.15",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "JAS.1.17",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "JAS.4.8",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "JER.10.10",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "JER.2.13",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "JER.31.3",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "JHN.14.6",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "JHN.3.16",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "JHN.4.24",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "MAT.19.26",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "MAT.22.37",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "MAT.28.19",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "MAT.5.48",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "MAT.6.24",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "MAT.6.33",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "PHP.4.19",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "PSA.14.1",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "PSA.19.1",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "PSA.40.1",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "PSA.40.1-3",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "PSA.40.2",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "PSA.40.3",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "PSA.42.1",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "PSA.46.1",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "PSA.52.8",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "PSA.86.15",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "REV.1.1",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "ROM.8.28",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "passage": "ROM.8.31",
+      "http": "200",
+      "versionId": 111,
+      "textPresent": true,
+      "attributionPresent": true,
+      "pass": true
+    }
+  ],
+  "note": "Real Worker requests. No App Key or Bible text stored. Includes every lesson reference plus permitted single verses and John 3:16."
+}
