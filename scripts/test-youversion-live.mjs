@@ -3,7 +3,7 @@
 const key=process.env.YVP_APP_KEY;
 if(!key){console.log('NO COMPROBADO: falta el secreto YVP_APP_KEY.');process.exit(2);}
 let all=true;
-for(const [name,id] of [['NVI 2015',2664],['NIV 2011',111]]){
+for(const [name,id] of [['NVI 2025',128],['NIV 2011',111]]){
  try{
   const options={headers:{'X-YVP-App-Key':key},redirect:'error',signal:AbortSignal.timeout(10000),cache:'no-store'};
   const metadata=await fetch(`https://api.youversion.com/v1/bibles/${id}`,options);

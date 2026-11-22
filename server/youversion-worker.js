@@ -1,5 +1,5 @@
 import {ALLOWED_PASSAGES} from './allowed-passages.js';
-const VERSIONS={es:2664,en:111};
+const VERSIONS={es:128,en:111};
 // No logs, database, user accounts, request bodies, or persistent Scripture cache.
 export default {async fetch(request,env){
  const url=new URL(request.url);
