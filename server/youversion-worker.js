@@ -9,11 +9,13 @@ export default {async fetch(request,env){
  const reply=(status,error,diagnostic)=>new Response(JSON.stringify({error,...(diagnostic?{diagnostic}:{})}),{status,headers});
  if(!origin||!allowed.includes(origin))return reply(403,'origin');
  headers['Access-Control-Allow-Origin']=origin;headers['Access-Control-Allow-Methods']='GET, OPTIONS';
- if(url.pathname!=='/passage'||url.username||url.password)return reply(404,'route');
+ const catalog=url.pathname==='/version-check';
+ if(!['/passage','/version-check'].includes(url.pathname)||url.username||url.password)return reply(404,'route');
  if(request.method==='OPTIONS')return new Response(null,{status:204,headers});
  if(request.method!=='GET')return reply(405,'method');
  const lang=url.searchParams.get('lang'),passage=url.searchParams.get('passage');
- if([...url.searchParams.keys()].some(k=>!['lang','passage'].includes(k))||url.searchParams.getAll('lang').length!==1||url.searchParams.getAll('passage').length!==1||!Object.hasOwn(VERSIONS,lang)||!ALLOWED_PASSAGES.includes(passage))return reply(400,'reference');
+ if(catalog&&url.search)return reply(400,'reference');
+ if(!catalog&&([...url.searchParams.keys()].some(k=>!['lang','passage'].includes(k))||url.searchParams.getAll('lang').length!==1||url.searchParams.getAll('passage').length!==1||!Object.hasOwn(VERSIONS,lang)||!ALLOWED_PASSAGES.includes(passage)))return reply(400,'reference');
  if(!env.YVP_APP_KEY||!env.PASSAGE_RATE_LIMITER)return reply(503,'configuration');
  // Mandatory platform limiter: CORS alone is not protection against quota abuse.
  const ip=request.headers.get('CF-Connecting-IP');if(!ip)return reply(503,'rate-limit-configuration');
@@ -22,6 +24,7 @@ export default {async fetch(request,env){
  let stage='metadata';
  const get=async path=>{const response=await fetch(`https://api.youversion.com/v1/${path}`,{headers:auth,redirect:'manual',signal:AbortSignal.timeout(8000),cache:'no-store'});if(!response.ok)throw {status:response.status};return response.json();};
  try{
+  if(catalog){stage='catalog';const found=[];let token='';for(let page=0;page<3;page++){const query=new URLSearchParams({'language_ranges[]':'es',all_available:'false',page_size:'99'});if(token)query.set('page_token',token);const result=await get('bibles?'+query);for(const item of result.data||[])if(/nvi|nueva versi[oó]n internacional/i.test([item.title,item.abbreviation,item.localized_title].join(' ')))found.push({id:item.id,title:item.title,abbreviation:item.abbreviation,copyright:item.copyright,books:item.books});token=result.next_page_token||'';if(!token)break;}return new Response(JSON.stringify({versions:found,complete:!token}),{headers});}
   // Fresh licensed version metadata first. Never fetch content after a denied license.
   const metadata=await get(`bibles/${version}`),attribution=metadata.copyright?.trim()||metadata.promotional_content?.trim();
   if(!attribution)return reply(502,'attribution');
