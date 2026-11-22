@@ -20,7 +20,7 @@ export default {async fetch(request,env){
  const limited=await env.PASSAGE_RATE_LIMITER.limit({key:ip});if(!limited.success)return reply(429,'rate_limit');
  const version=VERSIONS[lang],auth={'X-YVP-App-Key':env.YVP_APP_KEY};
  let stage='metadata';
- const get=async path=>{const response=await fetch(`https://api.youversion.com/v1/${path}`,{headers:auth,redirect:'error',signal:AbortSignal.timeout(8000),cache:'no-store'});if(!response.ok)throw {status:response.status};return response.json();};
+ const get=async path=>{const response=await fetch(`https://api.youversion.com/v1/${path}`,{headers:auth,redirect:'manual',signal:AbortSignal.timeout(8000),cache:'no-store'});if(!response.ok)throw {status:response.status};return response.json();};
  try{
   // Fresh licensed version metadata first. Never fetch content after a denied license.
   const metadata=await get(`bibles/${version}`),attribution=metadata.copyright?.trim()||metadata.promotional_content?.trim();
