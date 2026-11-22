@@ -1,3 +1,2 @@
-// Public configuration only. Never put an App Key here.
-// Empty until a separate, authorized backend is configured. No simulated passages.
-export const bibleConfig=Object.freeze({endpoint:''});
+// Public same-origin endpoint. App Key exists only in the Worker's secret.
+export const bibleConfig=Object.freeze({endpoint:'/passage'});

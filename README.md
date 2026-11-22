@@ -58,6 +58,6 @@ Texto consolidado aprobado, sin marcas de revisión, con aclaración pastoral di
 
 ## V0.1.3 experimental — no publicada
 
-Esta rama prepara YouVersion (NVI 2015 / NIV 2011), el visor aprobado y un intermediario que mantiene la App Key en un secreto de servidor. El endpoint permanece sin configurar hasta autorizar el servicio de pruebas. Si falta, se indica expresamente y se ofrece Bible Gateway; no se simulan pasajes.
+Esta rama prepara YouVersion (NVI 2015 / NIV 2011), el visor aprobado y un intermediario que mantiene la App Key en un secreto de servidor. El endpoint /passage se activa al desplegar el Worker de pruebas. Si falta, se indica expresamente y se ofrece Bible Gateway; no se simulan pasajes.
 
 Consultar [estado, pruebas y pasos de conexión](docs/V0.1.3_YOUVERSION.md). Main conserva V0.1.2.

@@ -2,7 +2,8 @@ import {ALLOWED_PASSAGES} from './allowed-passages.js';
 const VERSIONS={es:2664,en:111};
 // No logs, database, user accounts, request bodies, or persistent Scripture cache.
 export default {async fetch(request,env){
- const url=new URL(request.url),origin=request.headers.get('Origin');
+ const url=new URL(request.url);
+ const origin=request.headers.get('Origin')||(request.headers.get('Sec-Fetch-Site')==='same-origin'?url.origin:null);
  const allowed=(env.ALLOWED_ORIGINS||'').split(',').map(s=>s.trim()).filter(Boolean);
  const headers={'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Vary':'Origin'};
  const reply=(status,error)=>new Response(JSON.stringify({error}),{status,headers});
