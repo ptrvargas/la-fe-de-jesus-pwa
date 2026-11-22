@@ -1,0 +1,10 @@
+{
+  // Example only. No account, service, secret, or deployment has been created.
+  "name": "la-fe-de-jesus-bible-experimental",
+  "main": "youversion-worker.js",
+  "compatibility_date": "2026-11-22",
+  "workers_dev": false,
+  "observability": {"enabled": false},
+  "vars": {"ALLOWED_ORIGINS": "http://localhost:4173"},
+  "ratelimits": [{"name": "PASSAGE_RATE_LIMITER", "namespace_id": "1001", "simple": {"limit": 60, "period": 60}}]
+}

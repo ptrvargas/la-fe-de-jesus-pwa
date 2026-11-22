@@ -55,3 +55,9 @@ Pasajes reales verificados dentro de la lección con RVR1960 y NIV, incluyendo u
 ## Traducción inglesa V0.1.2
 
 Texto consolidado aprobado, sin marcas de revisión, con aclaración pastoral diferenciada. Se conserva la decisión original, los identificadores, las respuestas y la lección española. Registro de cambios y pruebas: [docs/V0.1.2_ENGLISH.md](docs/V0.1.2_ENGLISH.md). Atribuciones pendientes: [docs/LESSON_01_EN_EDITORIAL.md](docs/LESSON_01_EN_EDITORIAL.md).
+
+## V0.1.3 experimental — no publicada
+
+Esta rama prepara YouVersion (NVI 2015 / NIV 2011), el visor aprobado y un intermediario que mantiene la App Key en un secreto de servidor. El endpoint permanece sin configurar hasta autorizar el servicio de pruebas. Si falta, se indica expresamente y se ofrece Bible Gateway; no se simulan pasajes.
+
+Consultar [estado, pruebas y pasos de conexión](docs/V0.1.3_YOUVERSION.md). Main conserva V0.1.2.

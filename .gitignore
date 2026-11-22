@@ -3,3 +3,7 @@ dist/
 .openai/
 *.log
 .DS_Store
+
+.dev.vars*
+.env*
+.wrangler/
