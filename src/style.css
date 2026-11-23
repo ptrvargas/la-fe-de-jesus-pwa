@@ -14,3 +14,19 @@
 .passage-attribution{border-top:1px solid #d8d7c5;margin-top:22px;padding-top:14px;font:14px/1.6 system-ui,sans-serif;white-space:pre-line}.passage-attribution p{margin:0 0 8px}.passage-alternatives{border-top:1px solid #d8d7c5;margin-top:18px;font-size:14px}.passage-alternatives summary{font-weight:500}.passage-alternatives p{margin:8px 0}.passage-dialog iframe{height:340px}
 @media(max-width:480px){.passage-body{padding:18px}.passage-heading{padding:8px 18px}.passage-heading h2{font-size:22px}}
 @media(max-height:500px){.passage-dialog{max-height:calc(100dvh - 12px)}.passage-body{padding:14px 22px}.passage-heading{padding:4px 18px}}
+/* Final experimental reader adjustments; lesson layout remains unchanged. */
+.passage-heading h2{min-width:0;overflow-wrap:anywhere;font-size:clamp(20px,4vw,26px)}
+.passage-body{padding:18px 24px}
+.passage-version{font:14px/1.4 system-ui,sans-serif;margin:0 0 16px;color:#53685d}
+.passage-text[data-slot="yv-bible-renderer"]{--yv-reader-font-family:"Untitled Serif",Georgia,serif;--yv-reader-font-size:20px;--yv-reader-line-height:1.65;--yv-reader-max-width:65ch;font-family:var(--yv-reader-font-family);font-size:var(--yv-reader-font-size);line-height:var(--yv-reader-line-height);max-width:100%}
+.passage-text .yv-vlbl,.passage-text sup{vertical-align:super;font:600 .65em/0 system-ui,sans-serif;margin-inline:0 .4em;color:#275d4b;position:static}
+.passage-text .nd,.passage-text .sc{font-variant:small-caps}
+.passage-text .add,.passage-text .it{font-style:italic}
+.passage-text .bd{font-weight:bold}
+.passage-text p,.passage-text .p{margin:0 0 .7em}
+.passage-text .q1,.passage-text .q2,.passage-text .q3,.passage-text .q4{margin-block:.15em}
+.passage-attribution{margin-top:16px;padding-top:12px;font-size:13px;line-height:1.5}
+.passage-information{margin-top:8px;white-space:normal}.passage-information summary{font-weight:500}.passage-information a{display:inline-block;margin-top:6px}
+.passage-alternatives{margin-top:14px}
+@media(max-width:480px){.passage-body{padding:16px}.passage-heading{padding:8px 16px}.passage-text[data-slot="yv-bible-renderer"]{--yv-reader-font-size:20px}}
+@media(max-height:500px){.passage-body{padding:12px 18px}.passage-heading{padding:4px 14px}}
