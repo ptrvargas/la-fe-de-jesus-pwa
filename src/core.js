@@ -10,7 +10,7 @@ export function validateFile(v){
  }
  if(v.type!=='records'||!Array.isArray(v.records)||!v.records.length||v.records.length>200)throw Error('records');
  return {app:v.app,schema:SCHEMA,type:'records',records:v.records.map(r=>{
-  if(!r||!str(r.id,100)||!r.id.trim()||!str(r.name,120)||!r.lessons||typeof r.lessons!=='object'||Array.isArray(r.lessons)||!Object.keys(r.lessons).length)throw Error('record');
+  if(!r||!str(r.id,100)||!r.id.trim()||!str(r.name,120)||!r.lessons||typeof r.lessons!=='object'||Array.isArray(r.lessons))throw Error('record');
   const lessons={};for(const [id,l] of Object.entries(r.lessons)){
    if(!/^(?:[1-9]|1\d|20)$/.test(id)||!l||typeof l!=='object')throw Error('lesson');
    const n=emptyLesson();
@@ -19,7 +19,7 @@ export function validateFile(v){
    if(!str(l.signature,120))throw Error('signature');n.signature=l.signature;
    for(let i=1;i<=6;i++){const a=l.answers?.['q'+i];if(a!==undefined){if(!str(a))throw Error('answer');n.answers['q'+i]=a;}}
    for(let i=1;i<=4;i++){const a=l.applications?.['a'+i];if(a!==undefined){if(typeof a!=='boolean')throw Error('application');n.applications['a'+i]=a;}}
-   if(!Array.isArray(l.selfCheck)||l.selfCheck.length!==3||l.selfCheck.some(x=>!Number.isInteger(x)||x< -1||x>2))throw Error('selfCheck');n.selfCheck=[...l.selfCheck];
+   if(!Array.isArray(l.selfCheck)||l.selfCheck.length>3||l.selfCheck.some(x=>!Number.isInteger(x)||x< -1||x>2))throw Error('selfCheck');n.selfCheck=[...l.selfCheck,...Array(3-l.selfCheck.length).fill(-1)];
    lessons[id]=n;
   }return {id:r.id,name:r.name,lessons,instructor:str(r.instructor,120)?r.instructor:'',church:str(r.church,120)?r.church:'',notes:str(r.notes)?r.notes:'',...(str(r.sourceId,100)?{sourceId:r.sourceId}:{}),...(str(r.updatedAt,100)?{updatedAt:r.updatedAt}:{}),...(str(r.importedAt,100)?{importedAt:r.importedAt}:{})};
  })};
